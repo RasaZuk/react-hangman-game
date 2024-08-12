@@ -1,15 +1,17 @@
-import { useState } from 'react';
-import reactLogo from './assets/react.svg';
-import viteLogo from '/vite.svg';
+
 
 function App() {
-  const [count, setCount] = useState(0)
+  
 
   return (
-    <>
-     <div>HANGMAN GAME</div>
-    </>
-  )
+    
+    <main>
+      <h1>Gyvybės</h1>
+
+    </main>
+    
+    
+  );
 }
 
 export default App
