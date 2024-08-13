@@ -1,6 +1,11 @@
+import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
+
+
+
 function App() {
   
   return (
+    <>
     <main>
       <div className="header">
         <h1>Žaidimas kartuvės</h1>
@@ -10,13 +15,14 @@ function App() {
         <h2>Laimėjimai:</h2>
       </div>
       <div className="picture">
-        <img src="" alt="kartuves" />
-      </div>
-      <div>
-        <p>Keyboard</p>
-      </div>
-    </main>
     
+       
+      
+      </div>
+      
+
+    </main>
+    </>
     
   );
 }
