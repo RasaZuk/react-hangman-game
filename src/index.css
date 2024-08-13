@@ -14,11 +14,25 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   height: 100vh;
+  margin: 3rem;
 }
 
-h1 {
-  justify-content: flex-start;
+.header {
+  display: flex;
+  justify-content: first baseline;
+}
+
+.stats {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem;
+  gap: 5rem;
+}
+
+.picture {
+  width: 18rem;
+  height: 18rem;
+  border: 2px solid yellow;
 }
