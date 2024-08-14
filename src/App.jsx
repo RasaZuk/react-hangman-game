@@ -1,11 +1,12 @@
-import { Capitals } from "./components/capitals/Capitals";
-
 import { Hangman } from "./components/hangman/Hangman";
 import { Stat } from "./components/stat/Stat";
+import { Capitals } from "./components/capitals/Capitals";
+import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
 
 
 
 function App() {
+  
   
   return (
     <>
@@ -19,6 +20,9 @@ function App() {
       </div> 
       <div className="LetterChoise">
         <Capitals />
+      </div>
+      <div className="allButtons">
+        <Keyboardbutton/>
       </div>
       
       

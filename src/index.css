@@ -16,7 +16,7 @@ main {
   flex-direction: column;
   align-items: center;
   height: 100vh;
-  margin: 3rem;
+  margin: 1rem;
 }
 
 .header {
@@ -27,7 +27,7 @@ main {
 .stats {
   display: flex;
   flex-direction: row;
-  margin: 2rem;
+  margin: 1rem;
   gap: 5rem;
 }
 
@@ -42,5 +42,19 @@ main {
   justify-content: center;
   font-size: 3rem;
   border-bottom: 2px solid black;
+  gap: 2em;
   
+}
+
+.allButtons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: black;
+  font-size: 1.5rem;
+  margin: 1rem;
+  width: 26rem;
 }
