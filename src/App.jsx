@@ -1,4 +1,5 @@
-import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
+import { Hangman } from "./components/hangman/Hangman";
+import { Stat } from "./components/stat/Stat";
 
 
 
@@ -7,20 +8,12 @@ function App() {
   return (
     <>
     <main>
-      <div className="header">
-        <h1>Žaidimas kartuvės</h1>
-      </div>
-      <div className="stats">
-        <h2>Likusios gyvybės:</h2>
-        <h2>Laimėjimai:</h2>
-      </div>
-      <div className="picture">
+      <h1>Hangman</h1>
     
-       
-      
-      </div>
-      
-
+      <Stat />
+      <Hangman />
+     
+    
     </main>
     </>
     
