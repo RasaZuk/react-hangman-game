@@ -1,1 +1,1 @@
-export const city = ["Vilnius, Riga, Tallin"];
+export const city = "Vilnius, Riga, Tallin";
