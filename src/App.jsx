@@ -3,9 +3,13 @@ import { Stat } from "./components/stat/Stat";
 import { Capitals } from "./components/capitals/Capitals";
 import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
 
+import { city } from "./components/data/city";
+
 
 
 function App() {
+  
+
   
   
   return (
@@ -19,7 +23,7 @@ function App() {
         <Hangman />
       </div> 
       <div className="LetterChoise">
-        <Capitals />
+        <Capitals data={city} />
       </div>
       <div className="allButtons">
         <Keyboardbutton/>

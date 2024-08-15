@@ -1,22 +1,10 @@
 import style from './Capitals.module.css';
+import { city } from '../data/city';
 
 export function Capitals() {
-    const city = "Vilnius";
-
+    
     return (
-        <div 
-        style={{
-            display: "flex",
-            gap: "40em",
-            fontSize: "bold",
-            textTransform: "uppercase",
-
-        }}
-        >
-            {city.split(" ").map((letter, index) => (
-                <p key={index}>{letter}</p>
-            ))}
-        </div>
+       city[Math.floor(Math.random() * city.length)]
     );
           
 }
