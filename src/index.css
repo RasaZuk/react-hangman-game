@@ -32,18 +32,27 @@ main {
 }
 
 .picture {
+  display: flex;
+  justify-content: center;
   width: 18rem;
-  height: 18rem;
+  height: 20rem;
   border: 2px solid yellow;
 }
 
-.LetterChoise {
-  display: flex;
-  justify-content: center;
+img {
+  height: 20rem;
+}
+
+.letterChoise {
   font-size: 3rem;
+  gap: 1.5rem;
+ 
+}
+.letterChoise p {
+  display: flex;
+ 
+  gap: 0.5rem;
   border-bottom: 2px solid black;
-  gap: 2em;
-  
 }
 
 .allButtons {

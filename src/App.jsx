@@ -1,16 +1,19 @@
-import { Hangman } from "./components/hangman/Hangman";
+import display from './assets/display.png';
+import wrong1 from './assets/wrong1.png';
+import wrong2 from './assets/wrong2.png';
+import wrong3 from './assets/wrong3.png';
+import wrong4 from './assets/wrong4.png';
+import wrong5 from './assets/wrong5.png';
+import wrong6 from './assets/wrong6.png';
+
+
 import { Stat } from "./components/stat/Stat";
-import { Capitals } from "./components/capitals/Capitals";
 import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
-
-import { city } from "./components/data/city";
-
 
 
 function App() {
-  
 
-  
+
   
   return (
     <>
@@ -19,19 +22,23 @@ function App() {
       <div>
         <Stat />
       </div>
-      <div>
-        <Hangman />
+      <div className="picture">
+        <img src={display} alt="mainPicture" />
+        <img src={wrong1} alt="firstwrong" />
+        <img src={wrong2} alt="secongwrong" />
+        <img src={wrong3} alt="thirdwrong" />
+        <img src={wrong4} alt="fouthwrong" />
+        <img src={wrong5} alt="fithwrong" />
+        <img src={wrong6} alt="sixthwrong" />
       </div> 
-      <div className="LetterChoise">
-        <Capitals data={city} />
+      <div className="letterChoise">
+        <p>zodis</p>
+        
+      
       </div>
       <div className="allButtons">
         <Keyboardbutton/>
       </div>
-      
-      
-      
-     
     </main>
     </>
     
