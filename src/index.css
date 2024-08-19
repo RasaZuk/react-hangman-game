@@ -17,6 +17,7 @@ main {
   align-items: center;
   height: 100vh;
   margin: 1rem;
+  gap: 1rem;
 }
 
 .header {
@@ -50,7 +51,6 @@ img {
 }
 .letterChoise p {
   display: flex;
- 
   gap: 0.5rem;
   border-bottom: 2px solid black;
 }
@@ -66,4 +66,13 @@ img {
   font-size: 1.5rem;
   margin: 1rem;
   width: 26rem;
+}
+
+
+
+.word {
+  display: flex;
+  justify-content: center;
+  border-bottom: 5px solid black;
+  width: 1.5rem; 
 }

@@ -1,18 +1,3 @@
-const capital = [
-    {
-        word: 'Vilnius,'
-    },
-    {
-        word: 'Riga,'
-    },
-    {
-        word: 'Tallin,'
-    },
-];
+const capital = ['Vilnius', 'Riga', 'Tallin'];
 
-export function RandomCapital() {
-
-    return (
-        capital.Math.floor(Math.random() * capital.length)
-    ); 
-}
+export default {capital};

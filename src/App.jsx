@@ -1,48 +1,35 @@
-import display from './assets/display.png';
-import wrong1 from './assets/wrong1.png';
-import wrong2 from './assets/wrong2.png';
-import wrong3 from './assets/wrong3.png';
-import wrong4 from './assets/wrong4.png';
-import wrong5 from './assets/wrong5.png';
-import wrong6 from './assets/wrong6.png';
-
-
-import { Stat } from "./components/stat/Stat";
 import { Keyboardbutton } from "./components/keyboard/Keyboardbutton";
+import { RandamWord } from "./components/word/RandomWord";
 
 
 function App() {
 
+  const {wrongAns, images} = WrongGuess.defaultProps;
+  const maxWrong = 6;
+  const [guessed, setGuessed] = useState();
+  const [answer, setAnswer] = useState(RandamWord());
 
-  
-  return (
-    <>
+  const guessedWord = () => {
+    return answer.split('').map(letter => (guessed.includes(letter) ? letter : "_"))
+  }
+
+
+  return (  
     <main>
       <h1>Hangman</h1>
-      <div>
-        <Stat />
-      </div>
-      <div className="picture">
-        <img src={display} alt="mainPicture" />
-        <img src={wrong1} alt="firstwrong" />
-        <img src={wrong2} alt="secongwrong" />
-        <img src={wrong3} alt="thirdwrong" />
-        <img src={wrong4} alt="fouthwrong" />
-        <img src={wrong5} alt="fithwrong" />
-        <img src={wrong6} alt="sixthwrong" />
-      </div> 
+      <div className="picture"></div> 
       <div className="letterChoise">
-        <p>zodis</p>
-        
-      
+        <span>
+          <RandamWord />
+        </span>
       </div>
       <div className="allButtons">
-        <Keyboardbutton/>
+        <div>
+          <Keyboardbutton />
+        </div>
       </div>
-    </main>
-    </>
-    
+    </main>       
   );
 }
 
-export default App
+export default App;

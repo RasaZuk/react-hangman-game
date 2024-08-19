@@ -1,7 +1,15 @@
 button {
     color: black;
-    background-color: aliceblue;
+    background-color: green;
     font-size: 1.8rem;
     width: 2rem;
       
+}
+
+button.active {
+    background-color: green;
+}
+
+button.inactive {
+    background-color: red;
 }
