@@ -12,8 +12,6 @@ This project is currently in development.
 
 ## Installation and Setup Instructions
 
-# Download Visual Studio Code for Windows
-
 ### 💻 Prerequisites
 
 VScode - _download and install_
@@ -26,12 +24,6 @@ Node.js - _download and install_
 
 ```
 https://nodejs.org
-```
-
-Git - _download and install_
-
-```
-https://git-scm.com
 ```
 
 ### 🏃 Run locally
